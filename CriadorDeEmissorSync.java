@@ -1,6 +1,6 @@
-package br.ifpi.especializacao.gof.padroes;
+package br.ifpi.especializacao.gof.padroes.Tes;
 
-public class CriadorDeEmissorSync extends CriadorDeEmissor {
+public class CriadorDeEmissorSync implements CriadorDeEmissor {
 
 	public Emissor criar(int emissorTipo){
 		switch (emissorTipo) {

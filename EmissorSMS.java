@@ -1,4 +1,4 @@
-package br.ifpi.especializacao.gof.padroes;
+package br.ifpi.especializacao.gof.padroes.Tes;
 
 public class EmissorSMS implements Emissor {
 

@@ -1,4 +1,4 @@
-package br.ifpi.especializacao.gof.padroes;
+package br.ifpi.especializacao.gof.padroes.Tes;
 
 public class TestaEmissor {
 	
@@ -11,15 +11,15 @@ public class TestaEmissor {
  public static void main(String[] args) {
 	
 	   criadorDeEmissor = envioAssync.defineTipoEnvio();
-	   emissor = criadorDeEmissor.criar(CriadorDeEmissor.EMAIL);
+	   emissor = criadorDeEmissor.criar(0);
 	   emissor.enviar("Compra realizada com cartão!");
 	   
 	   criadorDeEmissor = envioAssync.defineTipoEnvio();
-	   emissor = criadorDeEmissor.criar(CriadorDeEmissor.JMS);
+	   emissor = criadorDeEmissor.criar(1);
 	   emissor.enviar("Compra realizada com cartão!");
 	   
 	   criadorDeEmissor = envioSync.defineTipoEnvio();
-	   emissor = criadorDeEmissor.criar(CriadorDeEmissor.SMS);
+	   emissor = criadorDeEmissor.criar(2);
 	   emissor.enviar("Compra realizada com cartão!");
 	 
  }
